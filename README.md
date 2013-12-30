@@ -1,36 +1,29 @@
 # functional-pharmacy
 
-FIXME: description
+A pharmacy system that uses a functional database (Datomic)
 
-## Installation
+## Rationale
 
-Download from http://example.com/FIXME.
+  Well obviously we want all of the things mentioned [here](http://www.datomic.com/rationale.html)
 
-## Usage
+  We're also doing this as part of a proof of concept that could very well ring in a new era of technologies at H-E-B.
 
-FIXME: explanation
+  No longer will I sit by and watch good developers struggle with "traditional" databases that were developed when dedicated, expensive boxes were necessary and memory and storage was expensive.
 
-    $ java -jar functional-pharmacy-0.1.0-standalone.jar [args]
+  So functional-pharmacy is an exploration of what it's like not to have these constraints.
 
-## Options
+  We're going to assume that:
+   - we have gigabytes of RAM
+   - our network bandwith and speed matches or exceeds hard disk access
+   - we can spin up and kill servers on a whim
 
-FIXME: listing of options this app accepts.
+## Roadmap
 
-## Examples
-
-...
-
-### Bugs
-
-...
-
-### Any Other Sections
-### That You Think
-### Might be Useful
+  See issue list for milestones
 
 ## License
 
-Copyright © 2013 FIXME
+Copyright © 2013 HEB
 
-Distributed under the Eclipse Public License either version 1.0 or (at
-your option) any later version.
+All this code is property of HEB Grocery Company.
+
