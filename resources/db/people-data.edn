@@ -1,0 +1,201 @@
+;;prescriber ids -100, -104, -108, -111, -112, -115, -119, -127, -130,-132, -134, -142
+[{:db/id #db/id [:db.part/user -100]
+  :person/name "Al Deral"
+  :person/born #inst "1954-01-29"}
+
+ {:db/id #db/id [:db.part/user -101]
+  :person/name "Arnold Popper"
+  :person/born #inst "1947-07-30"}
+
+ {:db/id #db/id [:db.part/user -102]
+  :person/name "Linda Hazza-Cold"
+  :person/born #inst "1956-09-26"}
+
+ {:db/id #db/id [:db.part/user -103]
+  :person/name "Mikkala Buser"
+  :person/born #inst "1956-07-31"}
+
+ {:db/id #db/id [:db.part/user -104]
+  :person/name "Ted Kauffer"
+  :person/born #inst "1931-04-07"}
+
+ {:db/id #db/id [:db.part/user -105]
+  :person/name "Sylvester Snyphles"
+  :person/born #inst "1946-07-06"}
+
+ {:db/id #db/id [:db.part/user -106]
+  :person/name "Shirley Deadmon"
+  :person/born #inst "1926-11-30"
+  :person/death #inst "2003-01-17"}
+
+ {:db/id #db/id [:db.part/user -107]
+  :person/name "Brian Down"
+  :person/born #inst "1938-09-07"}
+
+ {:db/id #db/id [:db.part/user -108]
+  :person/name "John McDonoldson-Smith"
+  :person/born #inst "1951-11-08"}
+
+ {:db/id #db/id [:db.part/user -109]
+  :person/name "Elpidia Carrillo-Vasquez"
+  :person/born #inst "1961-03-23"}
+
+ {:db/id #db/id [:db.part/user -110]
+  :person/name "Carl Weathermon"
+  :person/born #inst "1948-11-14"}
+
+ {:db/id #db/id [:db.part/user -111]
+  :person/name "Richard Tanner"
+  :person/born #inst "1945-04-24"}
+
+ {:db/id #db/id [:db.part/user -112]
+  :person/name "Mel Gertung"
+  :person/born #inst "1968-11-03"}
+
+ {:db/id #db/id [:db.part/user -113]
+  :person/name "Danny Guzzler"
+  :person/born #inst "1946-11-22"}
+
+ {:db/id #db/id [:db.part/user -114]
+  :person/name "Gary Beard"
+  :person/born #inst "1955-07-29"}
+
+ {:db/id #db/id [:db.part/user -115]
+  :person/name "Pauletta Vignetta-Hernandez"
+  :person/born #inst "1938-2-18"}
+
+ {:db/id #db/id [:db.part/user -116]
+  :person/name "Percey Ledge"
+  :person/born #inst "1975-06-24"}
+
+ {:db/id #db/id [:db.part/user -117]
+  :person/name "Nancy Pance"
+  :person/born #inst "1973-06-24"}
+
+ {:db/id #db/id [:db.part/user -118]
+  :person/name "Ronny Cortez"
+  :person/born #inst "1938-12-23"}
+
+ {:db/id #db/id [:db.part/user -119]
+  :person/name "Mark Lester-Pope"
+  :person/born #inst "1966-11-23"}
+
+ {:db/id #db/id [:db.part/user -120]
+  :person/name "Rae Emer-Eclaire"
+  :person/born #inst "1934-11-11"}
+
+ {:db/id #db/id [:db.part/user -121]
+  :person/name "Alyssa Mellon-Ortega"
+  :person/born #inst "1982-01-09"}
+
+ {:db/id #db/id [:db.part/user -122]
+  :person/name "Bryce Courtney"
+  :person/born #inst "1986-01-22"}
+
+ {:db/id #db/id [:db.part/user -123]
+  :person/name "Al Blairington"
+  :person/born #inst "1984-08-11"}
+
+ {:db/id #db/id [:db.part/user -124]
+  :person/name "Al Gonut"
+  :person/born #inst "1994-12-11"
+  :person/death #inst "1995-05-18"}
+
+ {:db/id #db/id [:db.part/user -125]
+  :person/name "Rob Rick"
+  :person/born #inst "1988-05-11"}
+
+ {:db/id #db/id [:db.part/user -126]
+  :person/name "Edw Long"
+  :person/born #inst "1966-02-08"}
+
+ {:db/id #db/id [:db.part/user -127]
+  :person/name "Jon Maddon"
+  :person/born #inst "1977-01-12"}
+
+ {:db/id #db/id [:db.part/user -128]
+  :person/name "Nickki Seven"
+  :person/born #inst "1977-07-07"}
+
+ {:db/id #db/id [:db.part/user -129]
+  :person/name "Clairol Danish"
+  :person/born #inst "1965-01-14"}
+
+ {:db/id #db/id [:db.part/user -130]
+  :person/name "Georgey Orwellingtonson"
+  :person/born #inst "1963-11-19"
+  :person/death #inst "2010-11-18"}
+
+ {:db/id #db/id [:db.part/user -131]
+  :person/name "Chuck Knippason"
+  :person/born #inst "1981-11-25"}
+
+ {:db/id #db/id [:db.part/user -132]
+  :person/name "Perry Macdowels"}
+
+ {:db/id #db/id [:db.part/user -133]
+  :person/name "Bob Heartenship"
+  :person/born #inst "1930-12-02"
+  :person/death #inst "2001-09-10"}
+
+ {:db/id #db/id [:db.part/user -134]
+  :person/name "Stewie Hopstauffer"}
+
+ {:db/id #db/id [:db.part/user -135]
+  :person/name "Bob Kalbr"
+  :person/born #inst "1955-12-07"}
+
+ {:db/id #db/id [:db.part/user -136]
+  :person/name "Bobby Falanschuster"
+  :person/born #inst "1978-08-15"}
+
+ {:db/id #db/id [:db.part/user -137]
+  :person/name "River Cobby-Baker"
+  :person/born #inst "1978-05-22"}
+
+ {:db/id #db/id [:db.part/user -138]
+  :person/name "Thurston Windchesterson"
+  :person/born #inst "1922-05-29"}
+
+ {:db/id #db/id [:db.part/user -139]
+  :person/name "Waldorf Bramblepancer"
+  :person/born #inst "1922-05-15"}
+
+ {:db/id #db/id [:db.part/user -140]
+  :person/name "Alexander Churchillston"
+  :person/born #inst "1988-02-18"}
+
+ {:db/id #db/id [:db.part/user -141]
+  :person/name "Cam Barker"}
+
+ {:db/id #db/id [:db.part/user -142]
+  :person/name "Summer Windchester"
+  :person/born #inst "1994-04-13"}
+
+ {:db/id #db/id [:db.part/user -143]
+  :person/name "Summer Windchesterson"
+  :person/born #inst "1990-01-15"}
+
+ {:db/id #db/id [:db.part/user -144]
+  :person/name "Johna Valley"}
+
+ {:db/id #db/id [:db.part/user -145]
+  :person/name "Brendon Vorheeze"
+  :person/born #inst "1978-11-04"}
+
+ {:db/id #db/id [:db.part/user -146]
+  :person/name "Bell Bivdavoe"
+  :person/born #inst "1980-03-21"}
+
+ {:db/id #db/id [:db.part/user -147]
+  :person/name "Arnold Bivdavoe"
+  :person/born #inst "1955-05-23"}
+
+ {:db/id #db/id [:db.part/user -148]
+  :person/name "Triston Talbot"
+  :person/born #inst "1991-01-09"}
+
+ {:db/id #db/id [:db.part/user -149]
+  :person/name "Hope Anderson-Smithe"
+  :person/born #inst "1997-08-22"}
+]

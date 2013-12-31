@@ -95,9 +95,26 @@
             :db.install/_attribute :db.part/db}
 
 
- ;;;drugs
+ ;;;drug schema
+
+ {:db/ident :drug/name
+      :db/valueType :db.type/string
+      :db/cardinality :db.cardinality/one
+      :db/id #db/id [:db.part/db]
+      :db.install/_attribute :db.part/db}
 
 
+ {:db/ident :drug/color
+      :db/valueType :db.type/ref
+      :db/cardinality :db.cardinality/one
+      :db/id #db/id [:db.part/db]
+      :db.install/_attribute :db.part/db}
 
+
+ {:db/ident :drug/interactions
+      :db/valueType :db.type/ref
+      :db/cardinality :db.cardinality/many
+      :db/id #db/id [:db.part/db]
+      :db.install/_attribute :db.part/db}
 
 ]

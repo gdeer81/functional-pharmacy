@@ -1,0 +1,54 @@
+[
+
+ {:db/id #db/id[:db.part/user -2000]
+  :db/ident :drug.color/red}
+
+ {:db/id #db/id[:db.part/user -2001]
+  :db/ident :drug.color/orange}
+
+ {:db/id #db/id[:db.part/user -2002]
+  :db/ident :drug.color/yellow}
+
+ {:db/id #db/id[:db.part/user -2003]
+  :db/ident :drug.color/green}
+
+ {:db/id #db/id[:db.part/user -2004]
+  :db/ident :drug.color/blue}
+
+ {:db/id #db/id[:db.part/user -2005]
+  :db/ident :drug.color/purple}
+
+ {:db/id #db/id[:db.part/user -2006]
+  :drug/name "The Red Pill"
+  :drug/color :drug.color/red}
+
+ {:db/id #db/id[:db.part/user -2007]
+  :drug/name "The Blue Pill"
+  :drug/color :drug.color/blue}
+
+ {:db/id #db/id[:db.part/user -2008]
+  :drug/name "The Yellow  Pill"
+  :drug/color :drug.color/yellow}
+
+ {:db/id #db/id[:db.part/user -2009]
+  :drug/name "The Orange Pill"
+  :drug/color :drug.color/orange
+  :drug/interactions [:drug.color/red
+                      :drug.color/yellow]}
+
+ {:db/id #db/id[:db.part/user -2010]
+  :drug/name "The Green Pill"
+  :drug/color :drug.color/green
+  :drug/interactions [:drug.color/blue
+                      :drug.color/yellow]}
+
+ {:db/id #db/id[:db.part/user -2011]
+  :drug/name "The Purple Pill"
+  :drug/color :drug.color/purple
+  :drug/interactions [:drug.color/red
+                      :drug.color/blue]}
+
+
+ ]
+
+

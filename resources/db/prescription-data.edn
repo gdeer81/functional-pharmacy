@@ -1,0 +1,406 @@
+  [
+   {:db/id #db/id [:db.part/user]
+        :prescription/patient [#db/id [:db.part/user -100]]
+        :prescription/prescriber [#db/id [:db.part/user -104]]
+        :prescription/medication [#db/id [:db.part/user -2006]]
+        :prescription/quantity 90
+        :prescription/expiration #inst "2015-01-04"
+        :prescription/refills 3}
+
+
+   {:db/id #db/id [:db.part/user]
+        :prescription/patient [#db/id [:db.part/user -101]]
+        :prescription/prescriber [#db/id [:db.part/user -104]]
+        :prescription/medication [#db/id [:db.part/user -2006]]
+        :prescription/quantity 90
+        :prescription/expiration #inst "2015-01-04"
+        :prescription/refills 3}
+
+   {:db/id #db/id [:db.part/user]
+        :prescription/patient [#db/id [:db.part/user -102]]
+        :prescription/prescriber [#db/id [:db.part/user -104]]
+        :prescription/medication [#db/id [:db.part/user -2006]]
+        :prescription/quantity 90
+        :prescription/expiration #inst "2015-01-04"
+        :prescription/refills 3}
+
+   {:db/id #db/id [:db.part/user]
+        :prescription/patient [#db/id [:db.part/user -103]]
+        :prescription/prescriber [#db/id [:db.part/user -100]]
+        :prescription/medication [#db/id [:db.part/user -2006]]
+        :prescription/quantity 90
+        :prescription/expiration #inst "2015-01-04"
+        :prescription/refills 3}
+
+   {:db/id #db/id [:db.part/user]
+        :prescription/patient [#db/id [:db.part/user -104]]
+        :prescription/prescriber [#db/id [:db.part/user -100]]
+        :prescription/medication [#db/id [:db.part/user -2006]]
+        :prescription/quantity 90
+        :prescription/expiration #inst "2015-01-04"
+        :prescription/refills 3}
+
+
+   {:db/id #db/id [:db.part/user]
+        :prescription/patient [#db/id [:db.part/user -105]]
+        :prescription/prescriber [#db/id [:db.part/user -104]]
+        :prescription/medication [#db/id [:db.part/user -2006]]
+        :prescription/quantity 90
+        :prescription/expiration #inst "2015-01-04"
+        :prescription/refills 3}
+
+   {:db/id #db/id [:db.part/user]
+        :prescription/patient [#db/id [:db.part/user -106]]
+        :prescription/prescriber [#db/id [:db.part/user -108]]
+        :prescription/medication [#db/id [:db.part/user -2006]]
+        :prescription/quantity 90
+        :prescription/expiration #inst "2015-01-04"
+        :prescription/refills 3}
+
+   {:db/id #db/id [:db.part/user]
+        :prescription/patient [#db/id [:db.part/user -107]]
+        :prescription/prescriber [#db/id [:db.part/user -108]]
+        :prescription/medication [#db/id [:db.part/user -2007]]
+        :prescription/quantity 90
+        :prescription/expiration #inst "2015-01-04"
+        :prescription/refills 3}
+
+   {:db/id #db/id [:db.part/user]
+        :prescription/patient [#db/id [:db.part/user -108]]
+        :prescription/prescriber [#db/id [:db.part/user -111]]
+        :prescription/medication [#db/id [:db.part/user -2007]]
+        :prescription/quantity 90
+        :prescription/expiration #inst "2015-01-04"
+        :prescription/refills 3}
+
+   {:db/id #db/id [:db.part/user]
+        :prescription/patient [#db/id [:db.part/user -109]]
+        :prescription/prescriber [#db/id [:db.part/user -111]]
+        :prescription/medication [#db/id [:db.part/user -2007]]
+        :prescription/quantity 90
+        :prescription/expiration #inst "2015-01-04"
+        :prescription/refills 3}
+
+   {:db/id #db/id [:db.part/user]
+        :prescription/patient [#db/id [:db.part/user -110]]
+        :prescription/prescriber [#db/id [:db.part/user -112]]
+        :prescription/medication [#db/id [:db.part/user -2007]]
+        :prescription/quantity 90
+        :prescription/expiration #inst "2015-01-04"
+        :prescription/refills 3}
+
+   {:db/id #db/id [:db.part/user]
+        :prescription/patient [#db/id [:db.part/user -111]]
+        :prescription/prescriber [#db/id [:db.part/user -112]]
+        :prescription/medication [#db/id [:db.part/user -2007]]
+        :prescription/quantity 90
+        :prescription/expiration #inst "2015-01-04"
+        :prescription/refills 3}
+
+   {:db/id #db/id [:db.part/user]
+        :prescription/patient [#db/id [:db.part/user -112]]
+        :prescription/prescriber [#db/id [:db.part/user -115]]
+        :prescription/medication [#db/id [:db.part/user -2007]]
+        :prescription/quantity 90
+        :prescription/expiration #inst "2015-01-04"
+        :prescription/refills 3}
+
+   {:db/id #db/id [:db.part/user]
+        :prescription/patient [#db/id [:db.part/user -113]]
+        :prescription/prescriber [#db/id [:db.part/user -115]]
+        :prescription/medication [#db/id [:db.part/user -2007]]
+        :prescription/quantity 90
+        :prescription/expiration #inst "2015-01-04"
+        :prescription/refills 3}
+
+   {:db/id #db/id [:db.part/user]
+        :prescription/patient [#db/id [:db.part/user -114]]
+        :prescription/prescriber [#db/id [:db.part/user -115]]
+        :prescription/medication [#db/id [:db.part/user -2008]]
+        :prescription/quantity 90
+        :prescription/expiration #inst "2015-01-04"
+        :prescription/refills 3}
+
+   {:db/id #db/id [:db.part/user]
+        :prescription/patient [#db/id [:db.part/user -115]]
+        :prescription/prescriber [#db/id [:db.part/user -119]]
+        :prescription/medication [#db/id [:db.part/user -2008]]
+        :prescription/quantity 90
+        :prescription/expiration #inst "2015-01-04"
+        :prescription/refills 3}
+
+   {:db/id #db/id [:db.part/user]
+        :prescription/patient [#db/id [:db.part/user -116]]
+        :prescription/prescriber [#db/id [:db.part/user -115]]
+        :prescription/medication [#db/id [:db.part/user -2008]]
+        :prescription/quantity 90
+        :prescription/expiration #inst "2015-01-04"
+        :prescription/refills 3}
+
+   {:db/id #db/id [:db.part/user]
+        :prescription/patient [#db/id [:db.part/user -117]]
+        :prescription/prescriber [#db/id [:db.part/user -115]]
+        :prescription/medication [#db/id [:db.part/user -2008]]
+        :prescription/quantity 90
+        :prescription/expiration #inst "2015-01-04"
+        :prescription/refills 3}
+
+   {:db/id #db/id [:db.part/user]
+        :prescription/patient [#db/id [:db.part/user -118]]
+        :prescription/prescriber [#db/id [:db.part/user -115]]
+        :prescription/medication [#db/id [:db.part/user -2008]]
+        :prescription/quantity 90
+        :prescription/expiration #inst "2015-01-04"
+        :prescription/refills 3}
+
+   {:db/id #db/id [:db.part/user]
+        :prescription/patient [#db/id [:db.part/user -119]]
+        :prescription/prescriber [#db/id [:db.part/user -132]]
+        :prescription/medication [#db/id [:db.part/user -2008]]
+        :prescription/quantity 90
+        :prescription/expiration #inst "2015-01-04"
+        :prescription/refills 3}
+
+   {:db/id #db/id [:db.part/user]
+        :prescription/patient [#db/id [:db.part/user -120]]
+        :prescription/prescriber [#db/id [:db.part/user -119]]
+        :prescription/medication [#db/id [:db.part/user -2008]]
+        :prescription/quantity 90
+        :prescription/expiration #inst "2015-01-04"
+        :prescription/refills 3}
+
+   {:db/id #db/id [:db.part/user]
+        :prescription/patient [#db/id [:db.part/user -121]]
+        :prescription/prescriber [#db/id [:db.part/user -119]]
+        :prescription/medication [#db/id [:db.part/user -2009]]
+        :prescription/quantity 90
+        :prescription/expiration #inst "2015-01-04"
+        :prescription/refills 3}
+
+   {:db/id #db/id [:db.part/user]
+        :prescription/patient [#db/id [:db.part/user -122]]
+        :prescription/prescriber [#db/id [:db.part/user -119]]
+        :prescription/medication [#db/id [:db.part/user -2009]]
+        :prescription/quantity 90
+        :prescription/expiration #inst "2015-01-04"
+        :prescription/refills 3}
+
+   {:db/id #db/id [:db.part/user]
+        :prescription/patient [#db/id [:db.part/user -123]]
+        :prescription/prescriber [#db/id [:db.part/user -119]]
+        :prescription/medication [#db/id [:db.part/user -2009]]
+        :prescription/quantity 90
+        :prescription/expiration #inst "2015-01-04"
+        :prescription/refills 3}
+
+   {:db/id #db/id [:db.part/user]
+        :prescription/patient [#db/id [:db.part/user -124]]
+        :prescription/prescriber [#db/id [:db.part/user -119]]
+        :prescription/medication [#db/id [:db.part/user -2009]]
+        :prescription/quantity 90
+        :prescription/expiration #inst "2015-01-04"
+        :prescription/refills 3}
+
+   {:db/id #db/id [:db.part/user]
+        :prescription/patient [#db/id [:db.part/user -125]]
+        :prescription/prescriber [#db/id [:db.part/user -119]]
+        :prescription/medication [#db/id [:db.part/user -2009]]
+        :prescription/quantity 90
+        :prescription/expiration #inst "2015-01-04"
+        :prescription/refills 3}
+
+   {:db/id #db/id [:db.part/user]
+        :prescription/patient [#db/id [:db.part/user -126]]
+        :prescription/prescriber [#db/id [:db.part/user -119]]
+        :prescription/medication [#db/id [:db.part/user -2009]]
+        :prescription/quantity 90
+        :prescription/expiration #inst "2015-01-04"
+        :prescription/refills 3}
+
+   {:db/id #db/id [:db.part/user]
+        :prescription/patient [#db/id [:db.part/user -127]]
+        :prescription/prescriber [#db/id [:db.part/user -132]]
+        :prescription/medication [#db/id [:db.part/user -2009]]
+        :prescription/quantity 90
+        :prescription/expiration #inst "2015-01-04"
+        :prescription/refills 3}
+
+   {:db/id #db/id [:db.part/user]
+        :prescription/patient [#db/id [:db.part/user -128]]
+        :prescription/prescriber [#db/id [:db.part/user -127]]
+        :prescription/medication [#db/id [:db.part/user -2009]]
+        :prescription/quantity 90
+        :prescription/expiration #inst "2015-01-04"
+        :prescription/refills 3}
+
+   {:db/id #db/id [:db.part/user]
+        :prescription/patient [#db/id [:db.part/user -129]]
+        :prescription/prescriber [#db/id [:db.part/user -127]]
+        :prescription/medication [#db/id [:db.part/user -2010]]
+        :prescription/quantity 90
+        :prescription/expiration #inst "2015-01-04"
+        :prescription/refills 3}
+
+   {:db/id #db/id [:db.part/user]
+        :prescription/patient [#db/id [:db.part/user -130]]
+        :prescription/prescriber [#db/id [:db.part/user -132]]
+        :prescription/medication [#db/id [:db.part/user -2010]]
+        :prescription/quantity 90
+        :prescription/expiration #inst "2015-01-04"
+        :prescription/refills 3}
+
+   {:db/id #db/id [:db.part/user]
+        :prescription/patient [#db/id [:db.part/user -131]]
+        :prescription/prescriber [#db/id [:db.part/user -130]]
+        :prescription/medication [#db/id [:db.part/user -2010]]
+        :prescription/quantity 90
+        :prescription/expiration #inst "2015-01-04"
+        :prescription/refills 3}
+
+   {:db/id #db/id [:db.part/user]
+        :prescription/patient [#db/id [:db.part/user -132]]
+        :prescription/prescriber [#db/id [:db.part/user -130]]
+        :prescription/medication [#db/id [:db.part/user -2010]]
+        :prescription/quantity 90
+        :prescription/expiration #inst "2015-01-04"
+        :prescription/refills 3}
+
+   {:db/id #db/id [:db.part/user]
+        :prescription/patient [#db/id [:db.part/user -133]]
+        :prescription/prescriber [#db/id [:db.part/user -132]]
+        :prescription/medication [#db/id [:db.part/user -2010]]
+        :prescription/quantity 90
+        :prescription/expiration #inst "2015-01-04"
+        :prescription/refills 3}
+
+   {:db/id #db/id [:db.part/user]
+        :prescription/patient [#db/id [:db.part/user -134]]
+        :prescription/prescriber [#db/id [:db.part/user -104]]
+        :prescription/medication [#db/id [:db.part/user -2010]]
+        :prescription/quantity 90
+        :prescription/expiration #inst "2015-01-04"
+        :prescription/refills 3}
+
+   {:db/id #db/id [:db.part/user]
+        :prescription/patient [#db/id [:db.part/user -135]]
+        :prescription/prescriber [#db/id [:db.part/user -134]]
+        :prescription/medication [#db/id [:db.part/user -2010]]
+        :prescription/quantity 90
+        :prescription/expiration #inst "2015-01-04"
+        :prescription/refills 3}
+
+   {:db/id #db/id [:db.part/user]
+        :prescription/patient [#db/id [:db.part/user -136]]
+        :prescription/prescriber [#db/id [:db.part/user -134]]
+        :prescription/medication [#db/id [:db.part/user -2011]]
+        :prescription/quantity 90
+        :prescription/expiration #inst "2015-01-04"
+        :prescription/refills 3}
+
+   {:db/id #db/id [:db.part/user]
+        :prescription/patient [#db/id [:db.part/user -137]]
+        :prescription/prescriber [#db/id [:db.part/user -134]]
+        :prescription/medication [#db/id [:db.part/user -2011]]
+        :prescription/quantity 90
+        :prescription/expiration #inst "2015-01-04"
+        :prescription/refills 3}
+
+   {:db/id #db/id [:db.part/user]
+        :prescription/patient [#db/id [:db.part/user -138]]
+        :prescription/prescriber [#db/id [:db.part/user -134]]
+        :prescription/medication [#db/id [:db.part/user -2011]]
+        :prescription/quantity 90
+        :prescription/expiration #inst "2015-01-04"
+        :prescription/refills 3}
+
+   {:db/id #db/id [:db.part/user]
+        :prescription/patient [#db/id [:db.part/user -139]]
+        :prescription/prescriber [#db/id [:db.part/user -134]]
+        :prescription/medication [#db/id [:db.part/user -2011]]
+        :prescription/quantity 90
+        :prescription/expiration #inst "2015-01-04"
+        :prescription/refills 3}
+
+   {:db/id #db/id [:db.part/user]
+        :prescription/patient [#db/id [:db.part/user -140]]
+        :prescription/prescriber [#db/id [:db.part/user -134]]
+        :prescription/medication [#db/id [:db.part/user -2011]]
+        :prescription/quantity 90
+        :prescription/expiration #inst "2015-01-04"
+        :prescription/refills 3}
+
+   {:db/id #db/id [:db.part/user]
+        :prescription/patient [#db/id [:db.part/user -141]]
+        :prescription/prescriber [#db/id [:db.part/user -134]]
+        :prescription/medication [#db/id [:db.part/user -2011]]
+        :prescription/quantity 90
+        :prescription/expiration #inst "2015-01-04"
+        :prescription/refills 3}
+
+
+   {:db/id #db/id [:db.part/user]
+        :prescription/patient [#db/id [:db.part/user -142]]
+        :prescription/prescriber [#db/id [:db.part/user -100]]
+        :prescription/medication [#db/id [:db.part/user -2011]]
+        :prescription/quantity 90
+        :prescription/expiration #inst "2015-01-04"
+        :prescription/refills 3}
+
+   {:db/id #db/id [:db.part/user]
+        :prescription/patient [#db/id [:db.part/user -143]]
+        :prescription/prescriber [#db/id [:db.part/user -142]]
+        :prescription/medication [#db/id [:db.part/user -2011]]
+        :prescription/quantity 90
+        :prescription/expiration #inst "2015-01-04"
+        :prescription/refills 3}
+
+   {:db/id #db/id [:db.part/user]
+        :prescription/patient [#db/id [:db.part/user -144]]
+        :prescription/prescriber [#db/id [:db.part/user -142]]
+        :prescription/medication [#db/id [:db.part/user -2011]]
+        :prescription/quantity 90
+        :prescription/expiration #inst "2015-01-04"
+        :prescription/refills 3}
+
+   {:db/id #db/id [:db.part/user]
+        :prescription/patient [#db/id [:db.part/user -145]]
+        :prescription/prescriber [#db/id [:db.part/user -142]]
+        :prescription/medication [#db/id [:db.part/user -2011]]
+        :prescription/quantity 90
+        :prescription/expiration #inst "2015-01-04"
+        :prescription/refills 3}
+
+   {:db/id #db/id [:db.part/user]
+        :prescription/patient [#db/id [:db.part/user -146]]
+        :prescription/prescriber [#db/id [:db.part/user -142]]
+        :prescription/medication [#db/id [:db.part/user -2011]]
+        :prescription/quantity 90
+        :prescription/expiration #inst "2015-01-04"
+        :prescription/refills 3}
+
+   {:db/id #db/id [:db.part/user]
+        :prescription/patient [#db/id [:db.part/user -147]]
+        :prescription/prescriber [#db/id [:db.part/user -142]]
+        :prescription/medication [#db/id [:db.part/user -2011]]
+        :prescription/quantity 90
+        :prescription/expiration #inst "2015-01-04"
+        :prescription/refills 3}
+
+   {:db/id #db/id [:db.part/user]
+        :prescription/patient [#db/id [:db.part/user -148]]
+        :prescription/prescriber [#db/id [:db.part/user -142]]
+        :prescription/medication [#db/id [:db.part/user -2011]]
+        :prescription/quantity 90
+        :prescription/expiration #inst "2015-01-04"
+        :prescription/refills 3}
+
+   {:db/id #db/id [:db.part/user]
+        :prescription/patient [#db/id [:db.part/user -149]]
+        :prescription/prescriber [#db/id [:db.part/user -142]]
+        :prescription/medication [#db/id [:db.part/user -2011]]
+        :prescription/quantity 90
+        :prescription/expiration #inst "2015-01-04"
+        :prescription/refills 3}
+
+
+  ]

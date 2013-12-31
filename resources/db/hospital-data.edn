@@ -1,0 +1,179 @@
+[
+
+ {:db/id #db/id [:db.part/user -200]
+  :hospital/title "Mercy Medicals"
+  :hospital/year 1984
+  :hospital/prescriber #db/id [:db.part/user -100]
+  :hospital/staff [#db/id [:db.part/user -101]
+               #db/id [:db.part/user -102]
+               #db/id [:db.part/user -103]]
+  :hospital/affiliate #db/id [:db.part/user -207]}
+
+ {:db/id #db/id [:db.part/user -201]
+  :hospital/title "First Care Hospital"
+  :hospital/year 1982
+  :hospital/prescriber #db/id [:db.part/user -104]
+  :hospital/staff [#db/id [:db.part/user -105]
+               #db/id [:db.part/user -106]
+               #db/id [:db.part/user -107]]
+  :hospital/affiliate #db/id [:db.part/user -209]}
+
+ {:db/id #db/id [:db.part/user -202]
+  :hospital/title "Saint Dudes Clinic"
+  :hospital/year 1987
+  :hospital/prescriber #db/id [:db.part/user -108]
+  :hospital/staff [#db/id [:db.part/user -101]
+               #db/id [:db.part/user -109]
+               #db/id [:db.part/user -110]]
+  :hospital/affiliate #db/id [:db.part/user -211]}
+
+ {:db/id #db/id [:db.part/user -203]
+  :hospital/title "Level One Health"
+  :hospital/year 1987
+  :hospital/prescriber #db/id [:db.part/user -111]
+  :hospital/staff [#db/id [:db.part/user -112]
+               #db/id [:db.part/user -113]
+               #db/id [:db.part/user -114]]
+  :hospital/affiliate #db/id [:db.part/user -212]}
+
+ {:db/id #db/id [:db.part/user -204]
+  :hospital/title "Robotic Surgery Center"
+  :hospital/year 1987
+  :hospital/prescriber #db/id [:db.part/user -115]
+  :hospital/staff [#db/id [:db.part/user -116]
+               #db/id [:db.part/user -117]
+               #db/id [:db.part/user -118]]}
+
+ {:db/id #db/id [:db.part/user -205]
+  :hospital/title "Commando Army Clinic"
+  :hospital/year 1985
+  :hospital/prescriber #db/id [:db.part/user -119]
+  :hospital/staff [#db/id [:db.part/user -101]
+               #db/id [:db.part/user -120]
+               #db/id [:db.part/user -121]]
+  :notes "This clinic is on an Army Base"}
+
+ {:db/id #db/id [:db.part/user -206]
+  :hospital/title "Die Hard Emergency Clinic"
+  :hospital/year 1988
+  :hospital/prescriber #db/id [:db.part/user -108]
+  :hospital/staff [#db/id [:db.part/user -122]
+               #db/id [:db.part/user -123]
+               #db/id [:db.part/user -124]]}
+
+ {:db/id #db/id [:db.part/user -207]
+  :hospital/title "Merci Medical Clinic"
+  :hospital/year 1991
+  :hospital/prescriber #db/id [:db.part/user -100]
+  :hospital/staff [#db/id [:db.part/user -101]
+               #db/id [:db.part/user -102]
+               #db/id [:db.part/user -125]
+               #db/id [:db.part/user -126]]
+  :hospital/affiliate #db/id [:db.part/user -208]}
+
+ {:db/id #db/id [:db.part/user -208]
+  :hospital/title "Terminal Health Providers"
+  :hospital/year 2003
+  :hospital/prescriber #db/id [:db.part/user -127]
+  :hospital/staff [#db/id [:db.part/user -101]
+               #db/id [:db.part/user -128]
+               #db/id [:db.part/user -129]]}
+
+ {:db/id #db/id [:db.part/user -209]
+  :hospital/title "Level Two Health"
+  :hospital/year 1985
+  :hospital/prescriber #db/id [:db.part/user -130]
+  :hospital/staff [#db/id [:db.part/user -105]
+               #db/id [:db.part/user -106]
+               #db/id [:db.part/user -131]]
+  :hospital/affiliate #db/id [:db.part/user -210]}
+
+ {:db/id #db/id [:db.part/user -210]
+  :hospital/title "Level Three Health"
+  :hospital/year 1988
+  :hospital/prescriber #db/id [:db.part/user -132]
+  :hospital/staff [#db/id [:db.part/user -105]
+               #db/id [:db.part/user -106]
+               #db/id [:db.part/user -133]]}
+
+ {:db/id #db/id [:db.part/user -211]
+  :hospital/title "Portsmouth Medical Center"
+  :hospital/year 1990
+  :hospital/prescriber #db/id [:db.part/user -134]
+  :hospital/staff [#db/id [:db.part/user -113]
+               #db/id [:db.part/user -114]
+               #db/id [:db.part/user -135]]}
+
+ {:db/id #db/id [:db.part/user -212]
+  :hospital/title "Le Rouge Medical"
+  :hospital/year 1989
+  :hospital/prescriber #db/id [:db.part/user -111]
+  :hospital/staff [#db/id [:db.part/user -112]
+               #db/id [:db.part/user -113]
+               #db/id [:db.part/user -136]]
+  :hospital/affiliate #db/id [:db.part/user -213]}
+
+ {:db/id #db/id [:db.part/user -213]
+  :hospital/title "Le Rouges Emergency Clinic"
+  :hospital/year 1992
+  :hospital/prescriber #db/id [:db.part/user -111]
+  :hospital/staff [#db/id [:db.part/user -112]
+               #db/id [:db.part/user -113]
+               #db/id [:db.part/user -136]]}
+
+ {:db/id #db/id [:db.part/user -214]
+  :hospital/title "Alta Vista Medical"
+  :hospital/year 1979
+  :hospital/prescriber #db/id [:db.part/user -137]
+  :hospital/staff [#db/id [:db.part/user -138]
+               #db/id [:db.part/user -139]
+               #db/id [:db.part/user -140]]
+  :hospital/affiliate #db/id [:db.part/user -215]}
+
+ {:db/id #db/id [:db.part/user -215]
+  :hospital/title "Alta Vista Emergency Clinic"
+  :hospital/year 1986
+  :hospital/prescriber #db/id [:db.part/user -100]
+  :hospital/staff [#db/id [:db.part/user -139]
+               #db/id [:db.part/user -141]
+               #db/id [:db.part/user -103]]}
+
+ {:db/id #db/id [:db.part/user -216]
+  :hospital/title "Max Health"
+  :hospital/year 1979
+  :hospital/prescriber #db/id [:db.part/user -142]
+  :hospital/staff [#db/id [:db.part/user -112]
+               #db/id [:db.part/user -143]
+               #db/id [:db.part/user -144]]
+  :hospital/affiliate #db/id [:db.part/user -217]}
+
+ {:db/id #db/id [:db.part/user -217]
+  :hospital/title "Max Health Emergency Clinic"
+  :hospital/year 1981
+  :hospital/prescriber #db/id [:db.part/user -142]
+  :hospital/staff [#db/id [:db.part/user -112]
+               #db/id [:db.part/user -145]
+               #db/id [:db.part/user -146]]
+  :hospital/affiliate #db/id [:db.part/user -218]}
+
+ {:db/id #db/id [:db.part/user -218]
+  :hospital/title "Max Health Accute Care Center"
+  :hospital/year 1985
+  :hospital/prescriber [#db/id [:db.part/user -142]
+                   #db/id [:db.part/user -147]]
+  :hospital/staff [#db/id [:db.part/user -112]
+               #db/id [:db.part/user -148]]}
+
+ {:db/id #db/id [:db.part/user -219]
+  :hospital/title "Mended Heart Medical"
+  :hospital/year 1995
+  :hospital/prescriber [#db/id [:db.part/user -112]]
+  :hospital/staff [#db/id [:db.part/user -112]
+               #db/id [:db.part/user -149]]}
+
+
+
+
+
+]
+
