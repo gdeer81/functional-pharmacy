@@ -62,7 +62,7 @@
 
  {:db/id #db/id [:db.part/user -115]
   :person/name "Pauletta Vignetta-Hernandez"
-  :person/born #inst "1938-2-18"}
+  :person/born #inst "1938-02-18"}
 
  {:db/id #db/id [:db.part/user -116]
   :person/name "Percey Ledge"
