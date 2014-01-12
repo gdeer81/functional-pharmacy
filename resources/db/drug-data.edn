@@ -1,6 +1,7 @@
 [
 
- {:db/id #db/id[:db.part/user -2000]
+
+ #_[{:db/id #db/id[:db.part/user -2000]
   :db/ident :drug.color/red}
 
  {:db/id #db/id[:db.part/user -2001]
@@ -16,7 +17,7 @@
   :db/ident :drug.color/blue}
 
  {:db/id #db/id[:db.part/user -2005]
-  :db/ident :drug.color/purple}
+  :db/ident :drug.color/purple}]
 
  {:db/id #db/id[:db.part/user -2006]
   :drug/name "The Red Pill"
@@ -50,5 +51,3 @@
 
 
  ]
-
-

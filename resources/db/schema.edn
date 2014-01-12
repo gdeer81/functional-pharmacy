@@ -117,4 +117,23 @@
       :db/id #db/id [:db.part/db]
       :db.install/_attribute :db.part/db}
 
+
+ {:db/id #db/id[:db.part/user -2000]
+  :db/ident :drug.color/red}
+
+ {:db/id #db/id[:db.part/user -2001]
+  :db/ident :drug.color/orange}
+
+ {:db/id #db/id[:db.part/user -2002]
+  :db/ident :drug.color/yellow}
+
+ {:db/id #db/id[:db.part/user -2003]
+  :db/ident :drug.color/green}
+
+ {:db/id #db/id[:db.part/user -2004]
+  :db/ident :drug.color/blue}
+
+ {:db/id #db/id[:db.part/user -2005]
+  :db/ident :drug.color/purple}
+
 ]
