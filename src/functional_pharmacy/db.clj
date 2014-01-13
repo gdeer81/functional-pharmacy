@@ -1,11 +1,7 @@
 (ns functional-pharmacy.db
   (:require [datomic.api :as d]))
 
-(defonce db-url "datomic:mem://fn-pharm-db")
-
-(defn db [] (d/db (d/connect db-url)))
-
-(defn tx [t] (d/transact (d/connect db-url)))
+(defn tx [t db-url] (d/transact (d/connect db-url) t ))
 
 (def e (comp d/touch #(d/entity (db) %) first))
 
@@ -19,8 +15,4 @@
     (d/db conn)))
 
 (defn read-file [s] (read-string (slurp s)))
-;;drug people hospital prescription
 (defn read-data [s] (read-file (format "resources/db/%s-data.edn" s)))
-
-
-(format "resources/db/%s-data.edn" "people")
