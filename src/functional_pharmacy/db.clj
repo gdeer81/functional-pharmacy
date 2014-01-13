@@ -1,10 +1,6 @@
 (ns functional-pharmacy.db
   (:require [datomic.api :as d]))
 
-(defn tx [t db-url] (d/transact (d/connect db-url) t ))
-
-(def e (comp d/touch #(d/entity (db) %) first))
-
 (defn init-db [name schema seed-data]
   (let [uri (str "datomic:mem://" name)
         conn (do (d/delete-database uri)
