@@ -7,7 +7,8 @@
 (def all-the-seeds (into []  (flatten (into [] (concat (map f/read-data ["drug" "people" "hospital" "prescription"]))))))
 (def db-val (f/init-db db-name schema all-the-seeds))
 
-(def sql-db (let [uri "datomic:sql://fun-pharm?jdbc:postgresql://localhost:5432/"
+;;if we wanted to use the pro starter edition we could use sql storage, otherwise we'll stick to the free one
+#_(def sql-db (let [uri "datomic:sql://fun-pharm?jdbc:postgresql://localhost:5432/"
                   conn (d/connect uri)]
               @(d/transact schema)
               @(d/transact all-the-seeds)
