@@ -2,10 +2,6 @@
   (:require [datomic.api :as d]
             [functional-pharmacy.db :as f]))
 
-(def schema (f/read-file  "resources/db/schema.edn"))
-(def db-name "fun-pharm-db")
-(def all-the-seeds (into []  (flatten (into [] (concat (map f/read-data ["drug" "people" "hospital" "prescription"]))))))
-(def db-val (f/init-db db-name schema all-the-seeds))
 
 (defn age [birthday today]
   (quot (- (.getTime today)

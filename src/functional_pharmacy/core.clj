@@ -3,10 +3,20 @@
             [functional-pharmacy.db :as f])
   (:gen-class))
 
-(def schema (f/read-file  "resources/db/schema.edn"))
-(def db-name "fun-pharm-db")
-(def all-the-seeds (into []  (flatten (into [] (concat (map f/read-data ["drug" "people" "hospital" "prescription"]))))))
-(def db-val (f/init-db db-name schema all-the-seeds))
+;;set up the database with all the schema and seed data
+(f/easy!)
+
+;;get a connection to the db
+(def conn (d/connect "datomic:mem://fun-pharm-db"))
+
+(foo "Al Deral" #inst "1954-01-22")
+(:user/add-person ["Al Deral" "1901"] )
+(d/with f/db-val [[:user/add-person "Al Deral" #inst "1954-01-22"]])
+(d/transact conn [[:add-person db-val (d/tempid :db.part/user) "Al Deral"]])
+
+
+
+
 (defn age [birthday today]
   (quot (- (.getTime today)
            (.getTime birthday))

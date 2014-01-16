@@ -136,4 +136,17 @@
  {:db/id #db/id[:db.part/user -2005]
   :db/ident :drug.color/purple}
 
+ { :db/id #db/id [:db.part/user -2006]
+  :db/ident :add-person
+  :db/fn #db/fn {:lang "clojure"
+                 :params [db id name birthday]
+                 :code "(when-not (seq (d/q '[:find ?name ?birthday
+                                      :in $ ?name ?birthday
+                                      :where [?e :person/name ?name]
+                                             [?e :person/born ?birthday]]
+                                    db name birthday))
+                  {:db/id id
+                   :person/name name
+                   :person/born birthday})"}}
+
 ]
