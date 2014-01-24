@@ -136,6 +136,7 @@
  {:db/id #db/id[:db.part/user -2005]
   :db/ident :drug.color/purple}
 
+;;person constructor function
  { :db/id #db/id [:db.part/user -2006]
   :db/ident :add-person
   :db/fn #db/fn {:lang "clojure"
@@ -148,5 +149,30 @@
                   {:db/id id
                    :person/name name
                    :person/born birthday})"}}
+
+;;prescription constructor
+{:db/id #db/id [:db.part/user -2007]
+ :db/ident :add-rx
+ :db/fn #db/fn {:lang "clojure"
+                :params [db id person-id prescriber-id med-id quantity
+                         expiration refill-count]
+                :code "(when (seq (d/q '[:find ?p-name ?dr-name
+                                         :in $ ?person-id ?prescriber-id
+                                :where [?person-id :person/name ?p-name]
+                                       [?prescriber-id :person/name ?dr-name]]
+                             db person-id prescriber-id))
+                      {:db/id id
+                       :prescription/patient person-id
+                       :prescription/prescriber prescriber-id
+                       :prescription/medication med-id
+                       :prescription/quantity quantity
+                       :prescription/expiration expiration
+                       :prescription/refills refill-count})"}}
+
+
+;;need to add the additional information about the transactions so wehn that we reigy transactions iwe will be able to query information
+;;the main thing that needs to be captured is whether the fact was a correction or not.  we might also use this information to set up rules about who can issue correction transactions and who can create new users, etc.
+#_{:db/id #db/id [:db.part/user -2008]
+ :db/ident }
 
 ]

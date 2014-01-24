@@ -11,7 +11,7 @@
 
 (foo "Al Deral" #inst "1954-01-22")
 (:user/add-person ["Al Deral" "1901"] )
-(d/with f/db-val [[:user/add-person "Al Deral" #inst "1954-01-22"]])
+(d/with f/db-val [[:user/add-person "Al Deral" #inst "1954-01-22"]])x
 (d/transact conn [[:add-person db-val (d/tempid :db.part/user) "Al Deral"]])
 
 
