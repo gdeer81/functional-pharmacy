@@ -1,4 +1,4 @@
-(ns functional_pharmacy.pharmacist_actions
+(ns functional-pharmacy.pharmacist-actions
   (:require [datomic.api :as d]
             [functional-pharmacy.db :as f]))
 
