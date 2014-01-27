@@ -1,7 +1,6 @@
 (ns functional_pharmacy.pharmacist_actions_test
-  (:require [functional_pharmacy.pharmacist_actions :as pa]
+  (:require [functional-pharmacy.pharmacist-actions :as pa]
             [datomic.api :as d]))
-
 
 (def db-url "datomic:mem://testy-db")
 (d/create-database db-url)
@@ -11,15 +10,20 @@
 
 (def db (:db-after @(d/transact conn schema)))
 
-(d/q '[:find ?e ?birthdate
+
+;;testing pa/add-patient
+(d/q '[:find ?name ?birthdate
        :in $
-       :where [?e :person/name "John Doe"]
+       :where [?e :person/name ?name]
               [?e :person/born ?birthdate]] (:db-after (d/with db [(pa/add-patient db "John Doe" #inst "1955-01-02")])))
 
-(defn view-patient
-  "View a patient. No Arg returns all patients in the database."
-  []
-  nil)
+(d/q '[:find ?name ?birthdate
+       :in $
+       :where [?e :person/name ?name]
+              [?e :person/born ?birthdate]] db)
+
+(pa/view-patient (:db-after (d/with db people)))
+(pa/view-patient (:db-after (d/with db people)) "Percey Ledge")
 
 (defn create-prescription
   "Create a prescription in the database"
