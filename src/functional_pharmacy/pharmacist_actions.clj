@@ -20,8 +20,6 @@
   [db name birthday]
   (create-patient db (d/tempid :db.part/user) name birthday))
 
-(add-patient f/db-val "Al Deral" #inst "1954-01-22")
-
 (defn view-patient
   "View a patient. No Arg returns all patients in the database."
   []

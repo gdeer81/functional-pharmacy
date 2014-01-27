@@ -170,9 +170,8 @@
                        :prescription/refills refill-count})"}}
 
 
-;;need to add the additional information about the transactions so wehn that we reigy transactions iwe will be able to query information
+;;need to add the additional information about the transactions so when we reify transactions we will be able to query information
 ;;the main thing that needs to be captured is whether the fact was a correction or not.  we might also use this information to set up rules about who can issue correction transactions and who can create new users, etc.
-#_{:db/id #db/id [:db.part/user -2008]
- :db/ident }
+
 
 ]
