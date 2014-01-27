@@ -2,7 +2,8 @@
   (:require [datomic.api :as d]
             [functional-pharmacy.db :as f]))
 
-(def create-patient "reutrns a map that can be added to a transation to create a new user"
+(def create-patient
+  "returns a map that can be added to a transation to create a new user"
   #db/fn {:lang :clojure
           :params [db id name birthday]
           :code (when-not (seq (d/q '[:find ?name ?birthday
