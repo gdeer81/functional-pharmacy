@@ -3,7 +3,9 @@
             [functional-pharmacy.db :as f]))
 
 (def create-patient
-  "returns a map that can be added to a transation to create a new user"
+  "Returns a map that can be added to a transaction to create a new user."
+  ;; this function creates a user when that person doesn't already exist?
+  ;; is that what the when-not does?
   #db/fn {:lang :clojure
           :params [db id name birthday]
           :code (when-not (seq (d/q '[:find ?name ?birthday
@@ -22,13 +24,36 @@
 
 (defn view-patient
   "View a patient. No Arg returns all patients in the database."
-  []
-  nil)
+  ([db] (d/q '[:find ?person ?birthday
+               :in $
+               :where [?p :person/name ?person]
+                      [?p :person/born ?birthday]] db))
 
-(defn create-prescription
+  ([db name] (d/q '[:find ?name ?birthday :in $ ?name :where [?p :person/name ?name]
+                                                             [?p :person/born ?birthday]] db name)))
+
+(def create-prescription "Returns a map that can be added to a transaction to create a new prescription for a patient"
+  #db/fn {:lang :clojure
+          :params [db id patient prescriber medication quantity expiration refills]
+          ;; simple logic to prevent accidental double-entries
+          :code (when-not (seq (d/q '[:find ?patient ?medication ?expiration
+                                      :in $ ?patient ?medication ?expiration
+                                      :where [?e :person/name ?name]
+                                             [?e :person/born ?birthday]]
+                                    db patient medication expiration))
+                  {:db/id id
+                   :prescription/patient patient
+                   :prescription/prescriber prescriber
+                   :prescription/medication medication
+                   :prescription/quantity quantity
+                   :prescription/expiration expiration
+                   :prescription/refills refills })})
+
+(defn add-prescription
   "Create a prescription in the database"
-  []
-  nil)
+  [db id patient prescriber medication quantity expiration refills]
+  (create-prescription db (d/tempid :db.part/user) 
+                       patient prescriber medication quantity expiration refills))
 
 (defn view-prescription
   "View a Prescription. No Arg returns all prescription in the database."
