@@ -27,10 +27,28 @@
   []
   nil)
 
-(defn create-prescription
+(def create-prescription "Returns a map that can be added to a transaction to create a new prescription for a patient"
+  #db/fn {:lang :clojure
+          :params [db id patient prescriber medication quantity expiration refills]
+          ;; simple logic to prevent accidental double-entries
+          :code (when-not (seq (d/q '[:find ?patient ?medication ?expiration
+                                      :in $ ?patient ?medication ?expiration
+                                      :where [?e :person/name ?name]
+                                             [?e :person/born ?birthday]]
+                                    db patient medication expiration))
+                  {:db/id id
+                   :prescription/patient patient
+                   :prescription/prescriber prescriber
+                   :prescription/medication medication
+                   :prescription/quantity quantity
+                   :prescription/expiration expiration
+                   :prescription/refills refills })})
+
+(defn add-prescription
   "Create a prescription in the database"
-  []
-  nil)
+  [db id patient prescriber medication quantity expiration refills]
+  (create-prescription db (d/tempid :db.part/user) 
+                       patient prescriber medication quantity expiration refills))
 
 (defn view-prescription
   "View a Prescription. No Arg returns all prescription in the database."
