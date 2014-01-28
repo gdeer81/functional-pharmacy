@@ -21,8 +21,13 @@
 
 (defn view-patient
   "View a patient. No Arg returns all patients in the database."
-  []
-  nil)
+  ([db] (d/q '[:find ?person ?birthday
+               :in $
+               :where [?p :person/name ?person]
+                      [?p :person/born ?birthday]] db))
+
+  ([db name] (d/q '[:find ?name ?birthday :in $ ?name :where [?p :person/name ?name]
+                                                             [?p :person/born ?birthday]] db name)))
 
 (defn create-prescription
   "Create a prescription in the database"
