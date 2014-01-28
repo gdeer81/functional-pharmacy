@@ -2,7 +2,10 @@
   (:require [datomic.api :as d]
             [functional-pharmacy.db :as f]))
 
-(def create-patient "reutrns a map that can be added to a transation to create a new user"
+(def create-patient 
+  "Returns a map that can be added to a transaction to create a new user."
+  ;; this function creates a user when that person doesn't already exist?
+  ;; is that what the when-not does?
   #db/fn {:lang :clojure
           :params [db id name birthday]
           :code (when-not (seq (d/q '[:find ?name ?birthday
