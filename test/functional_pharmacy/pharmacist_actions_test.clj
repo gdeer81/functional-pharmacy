@@ -15,20 +15,33 @@
 (d/q '[:find ?name ?birthdate
        :in $
        :where [?e :person/name ?name]
-              [?e :person/born ?birthdate]] (:db-after (d/with db [(pa/add-patient db "John Doe" #inst "1955-01-02")])))
+              [?e :person/born ?birthdate]] 
+  (:db-after 
+    (d/with db [(pa/add-patient db "John Doe" #inst "1955-01-02")])))
 
+;;testing pa/view-patient
 (d/q '[:find ?name ?birthdate
        :in $
        :where [?e :person/name ?name]
               [?e :person/born ?birthdate]] db)
 
-(pa/view-patient (:db-after (d/with db people)))
-(pa/view-patient (:db-after (d/with db people)) "Percey Ledge")
+;;#_(pa/view-patient (:db-after (d/with db people)))
+;;#_(pa/view-patient (:db-after (d/with db people)) "Percey Ledge")
 
-(defn create-prescription
-  "Create a prescription in the database"
-  []
-  nil)
+;;testing pa/create-prescription
+(d/q '[:find ?patient ?medication ?prescriber
+       :in $
+       :where [?e :prescription/patient ?patient]
+              [?e :prescription/medication ?medication]
+              [?e :prescription/prescriber ?prescriber]]
+  (:db-after
+    (d/with db [(pa/add-prescription db
+                                     "patientref" ;;???
+                                     "prescriberref"
+                                     "medicationref"
+                                     10
+                                     #inst "2014-02-22")])))
+
 
 (defn view-prescription
   "View a Prescription. No Arg returns all prescription in the database."
