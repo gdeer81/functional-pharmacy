@@ -2,7 +2,7 @@
   (:require [datomic.api :as d]
             [functional-pharmacy.db :as f]))
 
-(def create-patient 
+(def create-patient
   "Returns a map that can be added to a transaction to create a new user."
   ;; this function creates a user when that person doesn't already exist?
   ;; is that what the when-not does?
@@ -51,8 +51,8 @@
 
 (defn add-prescription
   "Create a prescription in the database"
-  [db id patient prescriber medication quantity expiration refills]
-  (create-prescription db (d/tempid :db.part/user) 
+  [db patient prescriber medication quantity expiration refills]
+  (create-prescription db (d/tempid :db.part/user)
                        patient prescriber medication quantity expiration refills))
 
 (defn view-prescription
