@@ -55,12 +55,13 @@
   (create-prescription db (d/tempid :db.part/user)
                        patient prescriber medication quantity expiration refills))
 
-(defn view-prescription
-  "View a Prescription. No Arg returns all prescription in the database."
-  []
-  nil)
+(defn view-all-prescriptions
+  "View all Prescriptions"
+  [db]
+  (d/q '[:find ?e :in $ :where [?e :prescription/patient _]] db))
 
-(defn create-fill
-  "Create a fill transaction for a prescription"
-  []
-  nil)
+(defn view-prescription-for-patient
+  [db name]
+  (d/q '[:find ?e :in $ ?name :where
+         [?p :person/name ?name]
+         [?e :prescription/patient ?p]] db name))

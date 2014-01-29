@@ -2,12 +2,33 @@
   (:require [datomic.api :as d]
             [functional-pharmacy.db :as f]))
 
+(defn init-db [name schema seed-data]
+  (let [uri (str "datomic:postgres://" name)
+        conn (do (d/delete-database uri)
+                 (d/create-database uri)
+                 (d/connect uri))]
+    @(d/transact conn schema)
+    @(d/transact conn seed-data)
+    (d/db conn)))
+
+
+(defn read-file [s] (read-string (slurp s)))
+(defn read-data [s] (read-file (format "resources/db/%s-data.edn" s)))
+
+(defn easy! []
+  (do
+    (def schema (read-file  "resources/db/schema.edn"))
+    (def db-name "fun-pharm-db")
+    (def all-the-seeds (into []  (flatten (into [] (concat (map read-data ["drug" "people" "hospital" "prescription"]))))))
+    (def db-val (init-db db-name schema all-the-seeds))))
+
 
 (defn age [birthday today]
   (quot (- (.getTime today)
            (.getTime birthday))
         (* 1000 60 60 24 365)))
 
+(easy!)
 ;;this returns every person's name date of birth and which hospital they work at
 (d/q '[:find ?name ?DOB ?hospital-name :in $ :where [?e :person/name ?name]
        [?e :person/born ?DOB]
@@ -29,7 +50,7 @@
  :where
  [?p :person/name ?name]
  [?p :person/born ?born]
-       [(functional-pharmacy.core/age ?born ?today) ?age]] db-val 32 (identity #inst "2014-01-13"))
+       [(functional-pharmacy.queries/age ?born ?today) ?age]] db-val 32 (identity #inst "2014-01-13"))
 
 ;;find people younger than Gary Beard and show their ages
 (d/q '[:find ?name ?age
@@ -40,7 +61,7 @@
  [?p2 :person/name ?name]
  [?p2 :person/born ?born]
  [(< ?sborn ?born)]
-       [(functional-pharmacy.core/age ?born ?today) ?age]] db-val (identity #inst "2014-01-13"))
+       [(functional-pharmacy.queries/age ?born ?today) ?age]] db-val (identity #inst "2014-01-13"))
 
 ;;The birthday paradox states that in a room of 23 people there is a 50% chance that someone has the same birthday.
 ;;this query finds who has the same birthday.
